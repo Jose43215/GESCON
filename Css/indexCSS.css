@@ -1,0 +1,57 @@
+:root{
+  --colorTitulo: #8b8b8b;
+  --colorBoton: #119aa5;
+  --colorBanner: #fdc508;
+  --ColorNombre: #373a3c;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: helvetica;
+}
+
+.parallax{
+  width: 100%;
+  height: 100vh;
+  background-image: url('../Recursos/Imagenes/theater-stage-430552_1920.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+}
+.parallax-text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-70%);
+  width: 75%;
+}
+
+.parallax h2{
+  font-size: 4em;
+  color: white;
+  text-align: center;
+}
+.parallax p{
+  font-size: 1em;
+  color: white;
+  text-align: center;
+
+}
+.abajo{
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+.abajo img{
+  width:5%;
+}
+
+.desliza{
+  position: absolute;
+  left: 0;
+  bottom: 1em;
+  right: 0;
+}
