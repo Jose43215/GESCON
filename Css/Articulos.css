@@ -1,0 +1,571 @@
+	.barra {
+		position: absolute;
+		left: 0%;
+		top: 0%;
+		background-color: #524F4F;
+		overflow: hidden;
+		width: 83rem;
+		height: 5rem;
+		
+	}
+	.barra .navbar {
+		position: absolute;
+		top: 20%;
+		color: white;
+		overflow: hidden;
+		font-size: 30px;
+		font-family: Arial;
+	}
+	.barra .prin {
+		position: absolute;
+		top: 20%;
+		left: 30%;
+		color: white;
+		overflow: hidden;
+		font-size: 30px;
+		font-family: Arial;
+	}
+	.barra .texto {
+		position: absolute;
+		top: 10%;
+		left: 70%;
+		overflow: hidden;
+	}
+	input[type=text] {
+		padding: 12px 20px;
+		margin: 8px 0;
+		box-sizing: border-box;
+	}
+	.barra .boton {
+		position: absolute;
+		top: 20%;
+		left: 87%;
+		overflow: hidden;
+		border-width: 3px;
+		border-style: solid;
+		border-color: #27CDCD;
+		border-radius: 10px;
+		color: #27CDCD;
+		overflow: hidden;
+		font-size: 30px;
+		font-family: Arial;
+	}
+	.opc {
+		position: absolute;
+		top: 15%;
+		left: 30%;
+		overflow: hidden;
+		border-width: 1px;
+		border-style: solid;
+		border-color: #B2B0B0;
+		border-radius: 10px;
+		padding: 5px;
+		color: #B2B0B0;
+		background-color: #D7D2D2;
+		overflow: hidden;
+		font-size: 30px;
+		font-family: Arial;
+		font-weight: bold;
+	}
+	.art {
+		position: absolute;
+		top: 15%;
+		left: 31.4%;
+		overflow: hidden;
+		border-width: 1px;
+		border-style: solid;
+		border-color: #B2B0B0;
+		border-radius: 10px;
+		padding: 5px;
+		color: #B2B0B0;
+		background-color: #D7D2D2;
+		overflow: hidden;
+		font-size: 30px;
+		font-family: Arial;
+		font-weight: bold;
+	}
+
+	.rev {
+		position: absolute;
+		top: 35%;
+		left: 62%;
+		overflow: hidden;
+		border-width: 1px;
+		border-style: solid;
+		border-color: #B2B0B0;
+		border-radius: 10px;
+		padding: 5px;
+		color: #B2B0B0;
+		background-color: #D7D2D2;
+		overflow: hidden;
+		font-size: 30px;
+		font-family: Arial;
+		font-weight: bold;
+	}
+
+	.opcns {
+		position: absolute;
+		top: 15%;
+		left: 42%;
+	}
+
+	.opcns select {
+		padding: 16px 20px;
+		border: none;
+		border-radius: 4px;
+		background-color: #f1f1f1;
+	}
+
+	.opcns2 {
+		position: absolute;
+		top: 35%;
+		left: 42%;
+	}
+
+	.opcns2 select {
+		padding: 16px 20px;
+		border: none;
+		border-radius: 4px;
+		background-color: #f1f1f1;
+	}
+
+	.art1 {
+		position: absolute;
+		top: 27%;
+		left: 15%;
+		overflow: hidden;
+		border-width: 0.5px;
+		border-style: solid;
+		border-radius: 10px;
+		border-color: #B2B0B0;
+		padding: 10px;
+		overflow: hidden;
+		font-size: 15px;
+		font-family: Arial;
+		width: 51rem;
+	}
+	.art1 button[type=button]{
+		position: absolute;
+		top: 0%;
+		left: 60%;
+		overflow: hidden;
+		border-width: 1px;
+		border-radius: 10px;
+		padding: 4.5px;
+		color: white;
+		background-color: #767373;
+		overflow: hidden;
+		font-size: 20px;
+		font-family: Arial;
+		font-weight: bold;
+		width: 10rem;
+	}
+	.art1 .dias{
+		position: absolute;
+		top: 30%;
+		left: 86%;
+		color: #B3AAAA;
+		font-size: 14px;
+		font-family: Arial;
+	}
+	.art2 {
+		position: absolute;
+		top: 37%;
+		left: 15%;
+		overflow: hidden;
+		border-width: 0.5px;
+		border-style: solid;
+		border-radius: 10px;
+		border-color: #B2B0B0;
+		padding: 10px;
+		overflow: hidden;
+		font-size: 15px;
+		font-family: Arial;
+		width: 51rem;
+	}
+	.art2 button[type=button]{
+		position: absolute;
+		top: 0%;
+		left: 60%;
+		overflow: hidden;
+		border-width: 1px;
+		border-radius: 10px;
+		padding: 4.5px;
+		color: white;
+		background-color: #767373;
+		overflow: hidden;
+		font-size: 20px;
+		font-family: Arial;
+		font-weight: bold;
+		width: 10rem;
+	}
+	.art2 .dias{
+		position: absolute;
+		top: 30%;
+		left: 86%;
+		color: #B3AAAA;
+		font-size: 14px;
+		font-family: Arial;
+	}
+	.art3 {
+		position: absolute;
+		top: 47%;
+		left: 15%;
+		overflow: hidden;
+		border-width: 0.5px;
+		border-style: solid;
+		border-radius: 10px;
+		border-color: #B2B0B0;
+		padding: 10px;
+		overflow: hidden;
+		font-size: 15px;
+		font-family: Arial;
+		width: 51rem;
+	}
+	.art3 button[type=button]{
+		position: absolute;
+		top: 0%;
+		left: 60%;
+		overflow: hidden;
+		border-width: 1px;
+		border-radius: 10px;
+		padding: 4.5px;
+		color: white;
+		background-color: #767373;
+		overflow: hidden;
+		font-size: 20px;
+		font-family: Arial;
+		font-weight: bold;
+		width: 10rem;
+	}
+	.art3 .dias{
+		position: absolute;
+		top: 30%;
+		left: 86%;
+		color: #B3AAAA;
+		font-size: 14px;
+		font-family: Arial;
+	}
+	.eval {
+		position: absolute;
+		top: 60%;
+		left: 38%;
+		overflow: hidden;
+		border-width: 1px;
+		border-radius: 10px;
+		padding: 10px;
+		color: white;
+		background-color: #767373;
+		overflow: hidden;
+		font-size: 30px;
+		font-family: Arial;
+	}
+	.contrib {
+		position: absolute;
+		top: 70%;
+		left: 18%;
+		overflow: hidden;
+		border-width: 0.5px;
+		border-style: solid;
+		border-radius: 10px;
+		border-color: #B2B0B0;
+		padding: 7px;
+		color: #B2B0B0;
+		overflow: hidden;
+		font-size: 15px;
+		font-family: Arial;
+		width: 45rem;
+	}
+	.contrib select{
+		position: absolute;
+		top: 1%;
+		left: 67.3%;
+		overflow: hidden;
+		border-width: 0.5px;
+		border-style: solid;
+		border-radius: 10px;
+		border-color: #B2B0B0;
+		padding: 5px;
+		color: #B2B0B0;
+		overflow: hidden;
+		font-size: 15px;
+		font-family: Arial;
+		width: 15rem;
+	}
+	.relev {
+		position: absolute;
+		top: 78%;
+		left: 18%;
+		overflow: hidden;
+		border-width: 0.5px;
+		border-style: solid;
+		border-radius: 10px;
+		border-color: #B2B0B0;
+		padding: 7px;
+		color: #B2B0B0;
+		overflow: hidden;
+		font-size: 15px;
+		font-family: Arial;
+		width: 45rem;
+	}
+	.relev select{
+		position: absolute;
+		top: 2%;
+		left: 67.3%;
+		overflow: hidden;
+		border-width: 0.5px;
+		border-style: solid;
+		border-radius: 10px;
+		border-color: #B2B0B0;
+		padding: 5px;
+		color: #B2B0B0;
+		overflow: hidden;
+		font-size: 15px;
+		font-family: Arial;
+		width: 15rem;
+	}
+	.orig {
+		position: absolute;
+		top: 86%;
+		left: 18%;
+		overflow: hidden;
+		border-width: 0.5px;
+		border-style: solid;
+		border-radius: 10px;
+		border-color: #B2B0B0;
+		padding: 7px;
+		color: #B2B0B0;
+		overflow: hidden;
+		font-size: 15px;
+		font-family: Arial;
+		width: 45rem;
+	}
+	.orig select{
+		position: absolute;
+		top: 2%;
+		left: 67.3%;
+		overflow: hidden;
+		border-width: 0.5px;
+		border-style: solid;
+		border-radius: 10px;
+		border-color: #B2B0B0;
+		padding: 5px;
+		color: #B2B0B0;
+		overflow: hidden;
+		font-size: 15px;
+		font-family: Arial;
+		width: 15rem;
+	}
+	.legib {
+		position: absolute;
+		top: 94%;
+		left: 18%;
+		overflow: hidden;
+		border-width: 0.5px;
+		border-style: solid;
+		border-radius: 10px;
+		border-color: #B2B0B0;
+		padding: 7px;
+		color: #B2B0B0;
+		overflow: hidden;
+		font-size: 15px;
+		font-family: Arial;
+		width: 45rem;
+	}
+	.legib select{
+		position: absolute;
+		top: 1%;
+		left: 67.3%;
+		overflow: hidden;
+		border-width: 0.5px;
+		border-style: solid;
+		border-radius: 10px;
+		border-color: #B2B0B0;
+		padding: 5px;
+		color: #B2B0B0;
+		overflow: hidden;
+		font-size: 15px;
+		font-family: Arial;
+		width: 15rem;
+	}
+	.valglob {
+		position: absolute;
+		top: 102%;
+		left: 18%;
+		overflow: hidden;
+		border-width: 0.5px;
+		border-style: solid;
+		border-radius: 10px;
+		border-color: #B2B0B0;
+		padding: 7px;
+		color: #B2B0B0;
+		overflow: hidden;
+		font-size: 15px;
+		font-family: Arial;
+		width: 45rem;
+	}
+	.valglob select{
+		position: absolute;
+		top: 1%;
+		left: 67.3%;
+		overflow: hidden;
+		border-width: 0.5px;
+		border-style: solid;
+		border-radius: 10px;
+		border-color: #B2B0B0;
+		padding: 5px;
+		color: #B2B0B0;
+		overflow: hidden;
+		font-size: 15px;
+		font-family: Arial;
+		width: 15rem;
+	}
+	.famil {
+		position: absolute;
+		top: 110%;
+		left: 18%;
+		overflow: hidden;
+		border-width: 0.5px;
+		border-style: solid;
+		border-radius: 10px;
+		border-color: #B2B0B0;
+		padding: 7px;
+		color: #B2B0B0;
+		overflow: hidden;
+		font-size: 15px;
+		font-family: Arial;
+		width: 45rem;
+	}
+	.famil select{
+		position: absolute;
+		top: 2%;
+		left: 67.3%;
+		overflow: hidden;
+		border-width: 0.5px;
+		border-style: solid;
+		border-radius: 10px;
+		border-color: #B2B0B0;
+		padding: 5px;
+		color: #B2B0B0;
+		overflow: hidden;
+		font-size: 15px;
+		font-family: Arial;
+		width: 15rem;
+	}
+	.coment {
+		position: absolute;
+		top: 130%;
+		left: 38%;
+		overflow: hidden;
+		border-width: 1px;
+		border-radius: 10px;
+		padding: 10px;
+		color: white;
+		background-color: #767373;
+		overflow: hidden;
+		font-size: 30px;
+		font-family: Arial;
+	}
+	.comentopc {
+		position: absolute;
+		top: 140%;
+		left: 18%;
+	}
+	.comentopc select{
+		position: absolute;
+		overflow: hidden;
+		border-width: 0.5px;
+		border-style: solid;
+		border-radius: 10px;
+		border-color: #B2B0B0;
+		padding: 7px;
+		color: white;
+		background-color: #767373;
+		overflow: hidden;
+		font-size: 15px;
+		font-family: Arial;
+		width: 45rem;
+	}
+	.comentxt{
+		position: absolute;
+		top: 150%;
+		left: 18%;
+	}
+	.comentxt textarea{
+		position: absolute;
+		width: 45rem;
+		height: 150px;
+		padding: 12px 20px;
+		box-sizing: border-box;
+		border: 2px solid #ccc;
+		border-radius: 4px;
+		background-color: #f8f8f8;
+		resize: none;
+	}
+	button[type=button]{
+		background-color: #2281FA;
+		border: none;
+		color: white;
+		padding: 16px 32px;
+		text-decoration: none;
+		border-radius: 10px;
+		margin: 4px 2px;
+		cursor: pointer;
+		font-size: 17px;
+		font-family: Arial;
+	}
+	.guardar{
+		position: absolute;
+		top: 180%;
+		left: 41%;
+	}
+	.publicar{
+		position: absolute;
+		top: 190%;
+		left: 23%;
+	}
+	.terminar{
+		position: absolute;
+		top: 190%;
+		left: 53%;
+	}
+
+	.ficha_revisor{
+		position: absolute;
+		top: 50%;
+		left: 25%;
+		overflow: hidden;
+		border-width: 0.9px;
+		border-style: solid;
+		border-radius: 10px;
+		padding: 7px;
+		overflow: hidden;
+		font-size: 15px;
+		font-family: Arial;
+		width: 45rem;
+	}
+
+	.texto{
+		font-size: 15px;
+		font-family: monospace;
+	}
+
+	.boton {
+		position: absolute;
+		top: 95%;
+		left: 45%;
+		overflow: hidden;
+		border-width: 2px;
+		border-style: solid;
+		border-color: #27CDCD;
+		border-radius: 10px;
+		color: #27CDCD;
+		overflow: hidden;
+		font-size: 25px;
+		font-family: Arial;
+	}
+
+	#titulo{
+		font-size: 25px;
+		font-style: italic;
+	}
