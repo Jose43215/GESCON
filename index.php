@@ -5,10 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>CONCILIORG</title>
-  <link rel="stylesheet" href="Css/indexCSS.css">
+  <link rel="stylesheet" href="Assets/Css/indexCSS.css">
+  <link rel="stylesheet" href="Assets/Css/Nav.css">
+  <link rel="stylesheet" href="Assets/Css/footer.css">
 </head>
 <body>
-  <header class="parallax">
+
+  <?php
+    require "Parciales/navIndex.php";
+  ?>
+
+  <div class="parallax">
     <div class="parallax-text">
       <h2>CONCILIORG</h2>
       <P>Ofreciendo soluciones integrales para congresos</P>
@@ -16,14 +23,14 @@
     <div class="abajo">
       <div class="desliza">
         <p>Desliza hacia abajo</p>
-        <img src="Recursos/Iconos/bx-chevrons-down.svg" alt="">
+        <img src="Assets/Recursos/Iconos/bx-chevrons-down.svg" alt="">
       </div>
     </div>
-  </header>
+  </div>
   <article class="nosotros">
     <p class="tituloPag">NOSOTROS</p>
       <section class="card">
-        <img src="Recursos/Imagenes/cia-80721_1920.jpg" alt="">
+        <img src="Assets/Recursos/Imagenes/cia-80721_1920.jpg" alt="">
         <p class="nombrePaquete">Nombre</p>
         <p class="textDescripcion">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
           sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
@@ -32,7 +39,7 @@
         <a href="#" class="botonVer">Ver</a>
       </section>
       <section class="card">
-        <img src="Recursos/Imagenes/cia-80721_1920.jpg" alt="">
+        <img src="Assets/Recursos/Imagenes/cia-80721_1920.jpg" alt="">
         <p class="nombrePaquete">Nombre</p>
         <p class="textDescripcion">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
           sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
@@ -41,7 +48,7 @@
         <a href="#" class="botonVer">Ver</a>
       </section>
       <section class="card">
-        <img src="Recursos/Imagenes/cia-80721_1920.jpg" alt="">
+        <img src="Assets/Recursos/Imagenes/cia-80721_1920.jpg" alt="">
         <p class="nombrePaquete">Nombre</p>
         <p class="textDescripcion">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
           sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
@@ -68,10 +75,10 @@
     <p class="tituloPag">TEXTO RUEBA 3</p>
     <p>  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
   </article>
-  <footer>
-    <div class="pie">
-      <p>&copy; COPYRIGHT | DERECHOS RESERVADOS | CONCILIORG</p>
-    </div>
-  </footer>
+
+  <?php
+    require "Parciales/Footer.php";
+  ?>
+
 </body>
 </html>
