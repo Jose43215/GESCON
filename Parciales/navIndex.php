@@ -4,8 +4,19 @@
   </div>
   <nav>
     <a href="" class="item-options">Inicio</a>
-    <a href="" class="item-options">Galeria</a>
-    <a href="" class="item-options">Ayuda</a>
+    <a href="" class="item-options">Registrar</a>
+    <a href="Paginas/Login.php" class="item-options">Inicio Sesión</a>
+    <a href="" class="item-options">Contacto</a>
+    <a href="" class="item-options">Contacto</a>
+    <a href="" class="item-options">Contacto</a>
+    <a href="" class="item-options">Contacto</a>
     <a href="" class="item-options">Contacto</a>
   </nav>
 </header>
+
+<script type="text/javascript">
+  window.addEventListener("scroll",function(){
+    var header = document.querySelector("header");
+    header.classList.toggle("abajo",window.scrollY>0);
+  })
+</script>

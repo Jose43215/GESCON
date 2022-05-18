@@ -1,7 +1,7 @@
-.container{
+header.container{
+  position: fixed;
   width: 100%;
   height: 60px;
-  background: #3d3d3d;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -9,8 +9,15 @@
   box-sizing: border-box;
   position: sticky;
   top: 0;
-  z-index: 1;
+  z-index: 10;
+  transition: 0.7s;
+  background-color: transparent;
 }
+
+header.abajo{
+  background: #3d3d3d;
+}
+
 .logo{
   width: 40px;
   margin: 0;
