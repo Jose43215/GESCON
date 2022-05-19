@@ -1,5 +1,5 @@
 <?php
-    require '../Conexiones\ConexionBase\Conexion.php';
+    require '../Conexiones/ConexionBase/Conexion.php';
 
     if (isset($_POST['Aceptar'])) {
       if (!empty($_POST['Correo']) && !empty($_POST['Contraseña'])) {
@@ -8,17 +8,28 @@
         $Contraseña=$_POST['Contraseña'];
         $TiposUsuario = $_POST['Usuario'];
 
-        $message = '';
+        $mensaje = '';
 
         switch($_POST['Usuario']){
           case 1:
-            echo "Autor";
             session_start();
+            $consulta = "SELECT * From Autor Where Correo='$Correo' AND Contrasena = '$Contraseña'";
+            $resultado = $mysqli->query($consulta);
+            $filas = $resultado->fetch_assoc();
+            print_R($filas);
 
-            $records = "SELECT * From Autor Where Correo='$Correo' AND Contrasena = '$Contraseña'";
-            $Ejecutar = $mysqli->query($records);
+            if(!empty($filas)){
+              $_SESSION['Id_Autor'] = $filas['Id_Autor'];
+              $_SESSION['Nombre'] = $filas['Nombre'];
+              $_SESSION['APaterno'] = $filas['APaterno'];
+              $_SESSION['AMaterno'] = $filas['AMaterno'];
+              $_SESSION['Correo'] = $filas['Correo'];
+              $_SESSION['Contrasena'] = $filas['Contrasena'];
 
-
+              header('location: AutorIndex.php');
+            }else{
+              $mensaje = "<p style='color:#FF0000'>Correo o Contraseña Incorrectos<p/>";
+            }
 
             break;
           case 2:
@@ -46,39 +57,8 @@
             session_start();
             break;
         }
-
       }
     }
-
-        /*$records = "SELECT * From Usuario Where Correo='$Correo'";
-
-        $Ejecutar = sqlsrv_query($con,$records);
-
-        $Datos = sqlsrv_fetch_array($Ejecutar,SQLSRV_FETCH_ASSOC);
-
-        $message = '';
-
-        if(count($Datos) > 0 && password_verify($_POST['Contraseña'],$Datos['Contraseña'])){
-          if ($Datos['Visibilidad']==1) {
-          $_SESSION['Id_Usuario']=$Datos['Id_Usuario'];
-          $_SESSION['TiposUsuario']=$Datos['TiposUsuario'];
-          $_SESSION['Rol']=$Datos['Rol'];
-
-            if ($_SESSION['TiposUsuario'] <= 2) {
-              header('location: inicio.php');
-            }elseif ($_SESSION['TiposUsuario'] > 2) {
-              header('location: inicioSolicitante.php');
-            }
-
-        }else{
-          $message = "<p style='color:#FF0000'>Tu estatus es inactivo<p/>";
-        }
-      }else{
-        $message = "<p style='color:#FF0000'>No hay coincidencia en la base de datos<p/>";
-      }
-      }
-
-    }*/
  ?>
 <!DOCTYPE html>
 <html lang="es" dir="ltr">
@@ -121,7 +101,9 @@
         </div>
         <input type="submit" value="login" class="button-login" name="Aceptar">
       </form>
+      <?php if (!empty($mensaje)): ?>
+        <p><?= $mensaje ?></p>
+      <?php endif; ?>
     </div>
-
   </body>
 </html>
