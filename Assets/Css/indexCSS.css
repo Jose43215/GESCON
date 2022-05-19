@@ -1,10 +1,3 @@
-:root{
-  --colorTitulo: #8b8b8b;
-  --colorBoton: #119aa5;
-  --colorBanner: #fdc508;
-  --ColorNombre: #373a3c;
-}
-
 body{
   margin: 0;
   padding: 0;
@@ -14,13 +7,13 @@ body{
 .parallax{
   width: 100%;
   height: 100vh;
-  background-image: url('..\\Recursos\\Imagenes\\microphone-2316268_1920.jpg');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
   background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
   position: relative;
 }
+
 .parallax-text{
   position: absolute;
   top: 50%;
@@ -34,19 +27,21 @@ body{
   color: white;
   text-align: center;
 }
+
 .parallax p{
   font-size: 1em;
   color: white;
   text-align: center;
-
 }
+
 .abajo{
   width: 50%;
   margin: 0 auto;
   text-align: center;
 }
+
 .abajo img{
-  width:5%;
+  width: 5%;
 }
 
 .desliza{
@@ -54,4 +49,15 @@ body{
   left: 0;
   bottom: 1em;
   right: 0;
+}
+
+#seccion1{
+  background-image: url('../Recursos/Imagenes/microphone-2316268_1920.jpg');
+}
+
+#seccion2{
+  background-image: url('../Recursos/Imagenes/theater-stage-430552_1920.jpg');
+}
+#seccion3{
+  background-image: url('../Recursos/Imagenes/microphone-2316268_1920.jpg');
 }

@@ -3,9 +3,9 @@
     <p>CONCILIORG</p>
   </div>
   <nav>
-    <a href="index.php" class="item-options">Inicio</a>
+    <a href="../index.php" class="item-options">Inicio</a>
     <a href="" class="item-options">Registrar</a>
-    <a href="Paginas/Login.php" class="item-options">Inicio Sesión</a>
+    <a href="Login.php" class="item-options">Inicio Sesión</a>
     <a href="" class="item-options">Contacto</a>
     <a href="" class="item-options">Contacto</a>
     <a href="" class="item-options">Contacto</a>

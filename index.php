@@ -11,14 +11,12 @@
 </head>
 <body>
 
-  <?php
-    require "Parciales/navIndex.php";
-  ?>
+  <?php require "Parciales/navIndex.php"; ?>
 
-  <div class="parallax">
+  <section class="parallax" id="seccion1">
     <div class="parallax-text">
       <h2>CONCILIORG</h2>
-      <P>Ofreciendo soluciones integrales para congresos</P>
+      <p>Ofreciendo Soluciones Integrales para Congesos</p>
     </div>
     <div class="abajo">
       <div class="desliza">
@@ -26,59 +24,25 @@
         <img src="Assets/Recursos/Iconos/bx-chevrons-down.svg" alt="">
       </div>
     </div>
-  </div>
-  <article class="nosotros">
-    <p class="tituloPag">NOSOTROS</p>
-      <section class="card">
-        <img src="Assets/Recursos/Imagenes/cia-80721_1920.jpg" alt="">
-        <p class="nombrePaquete">Nombre</p>
-        <p class="textDescripcion">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-          veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        </p>
-        <a href="#" class="botonVer">Ver</a>
-      </section>
-      <section class="card">
-        <img src="Assets/Recursos/Imagenes/cia-80721_1920.jpg" alt="">
-        <p class="nombrePaquete">Nombre</p>
-        <p class="textDescripcion">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-          veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        </p>
-        <a href="#" class="botonVer">Ver</a>
-      </section>
-      <section class="card">
-        <img src="Assets/Recursos/Imagenes/cia-80721_1920.jpg" alt="">
-        <p class="nombrePaquete">Nombre</p>
-        <p class="textDescripcion">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-          veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        </p>
-        <a href="#" class="botonVer">Ver</a>
-      </section>
-  </article>
-  <aside class="banner">
-    <div class="info">
-      <h2>
-        TEXTO DE ENTRADA AQUÍ<br>
-        texto 2
-      </h2>
-      <a href="#" class="botonVerBanner"></a>
-    </div>
-  </aside>
-  <article class="verano">
-    <p class="tituloPag">TEXTO METIDO 2</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  </article>
-  <article class="banner3"></article>
-  <article class="verano">
-    <p class="tituloPag">TEXTO RUEBA 3</p>
-    <p>  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  </article>
+  </section>
 
-  <?php
-    require "Parciales/Footer.php";
-  ?>
+  <section class="parallax">
+    Seccion 2 <br>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+    culpa qui officia deserunt mollit anim id est laborum.
+  </section>
+
+  <section class="parallax" id="seccion2">
+    <div class="parallax-text">
+      <h2>CONCILIORG</h2>
+      <p>Ofreciendo Soluciones Integrales para Congesos</p>
+    </div>
+  </section>
 
 </body>
 </html>

@@ -8,27 +8,42 @@
         $Contraseña=$_POST['Contraseña'];
         $TiposUsuario = $_POST['Usuario'];
 
+        $message = '';
+
         switch($_POST['Usuario']){
           case 1:
             echo "Autor";
+            session_start();
+
+            $records = "SELECT * From Autor Where Correo='$Correo' AND Contrasena = '$Contraseña'";
+            $Ejecutar = $mysqli->query($records);
+
+
+
             break;
           case 2:
             echo "Revisor";
+            session_start();
             break;
           case 3:
             echo "Jefe De Comité";
+            session_start();
             break;
           case 4:
             echo "Asistente";
+            session_start();
             break;
           case 5:
             echo "Organizador";
+            session_start();
             break;
           case 6:
             echo "Moderador";
+            session_start();
             break;
           case 7:
             echo "Administrador";
+            session_start();
             break;
         }
 
@@ -78,8 +93,9 @@
   </head>
   <body>
     <?php
-      require "../Parciales/navIndex.php";
+      require "../Parciales/navIndexParciales.php";
     ?>
+
     <div class="login-container" id="LoginContainer">
       <h1 class="title">Login</h1>
 
@@ -105,7 +121,7 @@
         </div>
         <input type="submit" value="login" class="button-login" name="Aceptar">
       </form>
-
     </div>
+
   </body>
 </html>

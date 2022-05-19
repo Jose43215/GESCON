@@ -7,15 +7,14 @@ header.container{
   align-items: center;
   padding: 0 2rem;
   box-sizing: border-box;
-  position: sticky;
   top: 0;
-  z-index: 10;
   transition: 0.7s;
   background-color: transparent;
+  z-index: 10;
 }
 
 header.abajo{
-  background: #3d3d3d;
+  background-color: #3d3d3d;
 }
 
 .logo{

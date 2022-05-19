@@ -1,17 +1,19 @@
 body{
   margin: 0;
   padding: 0;
-  height: 100vh;
   width: 100%;
+  height: 100vh;
   background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../Recursos/Imagenes/room-1489768_1920.jpg);
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
 }
 
 .login-container{
   align-self: center;
   background: rgba(24,24,26,0.7);
-  margin-top: 10%;
   width: 50%;
   height: fit-content;
   display: flex;
@@ -19,7 +21,7 @@ body{
   align-items: center;
   flex-direction: column;
   color: white;
-  transform: translateX(50%) translateY(-10%);
+  transform: translateX(50%) translateY(30%);
 }
 
 form{
