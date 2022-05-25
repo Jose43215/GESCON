@@ -1,3 +1,3 @@
 Se recomienda que en caso de que se suba una nueva base,se enumere, y en el commit se agregue
-los datos o información nueva, finalmente, se deberá avisar a todo el equipo enc aso de realizar
+los datos o información nueva, finalmente, se deberá avisar a todo el equipo en caso de realizar
 un commit para tener la base mas actualizada posible

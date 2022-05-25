@@ -61,49 +61,53 @@
     }
  ?>
 <!DOCTYPE html>
-<html lang="es" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Login</title>
-    <link rel="stylesheet" href="../Assets/Css/Nav.css">
-    <link rel="stylesheet" href="../Assets/Css/footer.css">
-    <link rel="stylesheet" href="../Assets/Css/Login.css">
-  </head>
-  <body>
-    <?php
-      require "../Parciales/navIndexParciales.php";
-    ?>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/lib/w3.css">
+<style>
+.city {display:none;}
+</style>
+<body class="w3-container">
 
-    <div class="login-container" id="LoginContainer">
-      <h1 class="title">Login</h1>
+<p>Click on the links below:</p>
 
-      <form action="" method="post">
-        <div class="input-line-container">
-          <span class="name-input">Correo</span>
-          <input type="email" name="Correo" class="input-line" required>
-        </div>
-        <div class="input-line-container">
-          <span class="name-input">Contraseña</span>
-          <input type="password" name="Contraseña" class="input-line" required>
-        </div>
-        <div class="input-line-container">
-          <span class="name-input">Tipo Usuario</span>
-          <select name="Usuario" class="input-select" required>
-            <option value="1" class="select-opcion">Autor</option>
-            <option value="2" class="select-opcion">Revisor</option>
-            <option value="3" class="select-opcion">Jefe de Comite</option>
-            <option value="4" class="select-opcion">Asistente</option>
-            <option value="5" class="select-opcion">Organizador</option>
-            <option value="6" class="select-opcion">Moderador</option>
-            <option value="7" class="select-opcion">Administrador</option>
-        </div>
-        <input type="submit" value="login" class="button-login" name="Aceptar">
-      </form>
-      <?php if (!empty($mensaje)): ?>
-        <p><?= $mensaje ?></p>
-      <?php endif; ?>
-    </div>
-  </body>
-</html>
+<ul class="w3-navbar w3-black">
+  <li><a href="#" class="tablink" onclick="openCity(event, 'London');">London</a></li>
+  <li><a href="#" class="tablink" onclick="openCity(event, 'Paris');">Paris</a></li>
+  <li><a href="#" class="tablink" onclick="openCity(event, 'Tokyo');">Tokyo</a></li>
+</ul>
+
+<div id="London" class="w3-container w3-border city">
+  <h2>London</h2>
+  <p>London is the capital city of England.</p>
+</div>
+
+<div id="Paris" class="w3-container w3-border city">
+  <h2>Paris</h2>
+  <p>Paris is the capital of France.</p> 
+</div>
+
+<div id="Tokyo" class="w3-container w3-border city">
+  <h2>Tokyo</h2>
+  <p>Tokyo is the capital of Japan.</p>
+</div>
+
+<script>
+function openCity(evt, cityName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " w3-red";
+}
+</script>
+
+</body>
+</html> 
