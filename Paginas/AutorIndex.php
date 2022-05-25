@@ -11,12 +11,24 @@
     <title>Autor Index</title>
     <link rel="stylesheet" href="../Assets/Css/Nav.css">
     <link rel="stylesheet" href="../Assets/Css/footer.css">
+    <link rel="stylesheet" href="../Assets/Css/Autor.css">
   </head>
   <body>
     <?php if(!empty($_SESSION)): ?>
 
       <?php require "../Parciales/navAutor.php";?>
-      <h1>Bienvenido Autor <?=$_SESSION['Nombre']?></h1>
+      <div class="content">
+        <div class="saludo">
+          <h2>Bienvenido Autor <?php echo($_SESSION['Nombre']) ?></h2>
+        </div>
+        <div class="titulo">
+          <h3>Mis Articulos</h3>
+        </div>
+        <br><br>
+        <div class="articulos">
+          div.
+        </div>
+      </div>
 
     <?php else: ?>
       <h1>Por Favor Inicie Sesión o Registrese</h1>

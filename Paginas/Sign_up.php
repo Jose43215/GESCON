@@ -64,11 +64,15 @@
 <html>
 <title>W3.CSS</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../Assets/Css/Nav.css">
 <link rel="stylesheet" href="../Assets/Css/Sign_up.css">
 <style>
 .city {display:none;}
 </style>
-<body class="w3-container">
+<body class="w3-container" style="background-color: grey; margin:0;">
+  <?php
+    require "../Parciales/navIndexParciales.php";
+  ?>
 
 <p>Click on the links below:</p>
 
@@ -85,7 +89,7 @@
 
 <div id="Paris" class="w3-container w3-border city">
   <h2>Paris</h2>
-  <p>Paris is the capital of France.</p> 
+  <p>Paris is the capital of France.</p>
 </div>
 
 <div id="Tokyo" class="w3-container w3-border city">
@@ -110,4 +114,4 @@ function openCity(evt, cityName) {
 </script>
 
 </body>
-</html> 
+</html>
