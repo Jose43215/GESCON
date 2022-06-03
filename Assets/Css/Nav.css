@@ -24,6 +24,11 @@ header.abajo{
   color: white;
 }
 
+.logo a{
+  text-decoration: none;
+  color: inherit;
+}
+
 .item-options{
   color: #f1f1f1;
   margin: 0 1.5rem;

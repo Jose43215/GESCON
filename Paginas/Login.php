@@ -13,7 +13,7 @@
         switch($_POST['Usuario']){
           case 1:
             session_start();
-            $consulta = "SELECT * From Autor Where Correo='$Correo' AND Contrasena = '$Contraseña'";
+            $consulta = "SELECT * From autor Where Correo='$Correo' AND Contrasena = '$Contraseña'";
             $resultado = $mysqli->query($consulta);
             $filas = $resultado->fetch_assoc();
             print_R($filas);
@@ -30,31 +30,123 @@
             }else{
               $mensaje = "<p style='color:#FF0000'>Correo o Contraseña Incorrectos<p/>";
             }
-
             break;
           case 2:
-            echo "Revisor";
-            session_start();
+          session_start();
+          $consulta = "SELECT * From revisor Where Correo='$Correo' AND Contrasena = '$Contraseña'";
+          $resultado = $mysqli->query($consulta);
+          $filas = $resultado->fetch_assoc();
+          print_R($filas);
+
+          if(!empty($filas)){
+            $_SESSION['Id_Revisor'] = $filas['Id_Revisor'];
+            $_SESSION['Nombre'] = $filas['Nombre'];
+            $_SESSION['APaterno'] = $filas['APaterno'];
+            $_SESSION['AMaterno'] = $filas['AMaterno'];
+            $_SESSION['Correo'] = $filas['Correo'];
+            $_SESSION['Contrasena'] = $filas['Contrasena'];
+            $_SESSION['Id_Especialidad'] = $filas['Id_Especialidad'];
+
+            header('location: RevisorIndex.php');
+          }else{
+            $mensaje = "<p style='color:#FF0000'>Correo o Contraseña Incorrectos<p/>";
+          }
             break;
           case 3:
-            echo "Jefe De Comité";
-            session_start();
+          session_start();
+          $consulta = "SELECT * From jefe_comite Where Correo='$Correo' AND Contrasena = '$Contraseña'";
+          $resultado = $mysqli->query($consulta);
+          $filas = $resultado->fetch_assoc();
+          print_R($filas);
+
+          if(!empty($filas)){
+            $_SESSION['Id_JefeComite'] = $filas['Id_JefeComite'];
+            $_SESSION['Nombre'] = $filas['Nombre'];
+            $_SESSION['APaterno'] = $filas['APaterno'];
+            $_SESSION['AMaterno'] = $filas['AMaterno'];
+            $_SESSION['Correo'] = $filas['Correo'];
+            $_SESSION['Contrasena'] = $filas['Contrasena'];
+            $_SESSION['Id_Especialidad'] = $filas['Id_Especialidad'];
+
+            header('location: JefeComiteIndex.php');
+          }else{
+            $mensaje = "<p style='color:#FF0000'>Correo o Contraseña Incorrectos<p/>";
+          }
             break;
           case 4:
-            echo "Asistente";
-            session_start();
+          session_start();
+          $consulta = "SELECT * From asistente Where Correo='$Correo' AND Contrasena = '$Contraseña'";
+          $resultado = $mysqli->query($consulta);
+          $filas = $resultado->fetch_assoc();
+          print_R($filas);
+
+          if(!empty($filas)){
+            $_SESSION['Id_Asistente'] = $filas['Id_Asistente'];
+            $_SESSION['Nombre'] = $filas['Nombre'];
+            $_SESSION['APaterno'] = $filas['APaterno'];
+            $_SESSION['AMaterno'] = $filas['AMaterno'];
+            $_SESSION['Correo'] = $filas['Correo'];
+            $_SESSION['Contrasena'] = $filas['Contrasena'];
+
+            header('location: AsistenteIndex.php');
+          }else{
+            $mensaje = "<p style='color:#FF0000'>Correo o Contraseña Incorrectos<p/>";
+          }
             break;
           case 5:
-            echo "Organizador";
-            session_start();
+          session_start();
+          $consulta = "SELECT * From organizador Where Correo='$Correo' AND Contrasena = '$Contraseña'";
+          $resultado = $mysqli->query($consulta);
+          $filas = $resultado->fetch_assoc();
+          print_R($filas);
+
+          if(!empty($filas)){
+            $_SESSION['Id_Organizador'] = $filas['Id_Organizador'];
+            $_SESSION['Nombre'] = $filas['Nombre'];
+            $_SESSION['APaterno'] = $filas['APaterno'];
+            $_SESSION['AMaterno'] = $filas['AMaterno'];
+            $_SESSION['Correo'] = $filas['Correo'];
+            $_SESSION['Contrasena'] = $filas['Contrasena'];
+            $_SESSION['Id_Especialidad'] = $filas['Id_Especialidad'];
+
+            header('location: AsistenteIndex.php');
+          }else{
+            $mensaje = "<p style='color:#FF0000'>Correo o Contraseña Incorrectos<p/>";
+          }
             break;
           case 6:
-            echo "Moderador";
-            session_start();
+          session_start();
+          $consulta = "SELECT * From moderador Where Correo='$Correo' AND Contrasena = '$Contraseña'";
+          $resultado = $mysqli->query($consulta);
+          $filas = $resultado->fetch_assoc();
+          print_R($filas);
+
+          if(!empty($filas)){
+            $_SESSION['Id_Moderador'] = $filas['Id_Moderador'];
+            $_SESSION['Nombre'] = $filas['Nombre'];
+            $_SESSION['APaterno'] = $filas['APaterno'];
+            $_SESSION['AMaterno'] = $filas['AMaterno'];
+            $_SESSION['Correo'] = $filas['Correo'];
+            $_SESSION['Contrasena'] = $filas['Contrasena'];
+
+            header('location:ModeradorIndex.php');
+          }else{
+            $mensaje = "<p style='color:#FF0000'>Correo o Contraseña Incorrectos<p/>";
+          }
             break;
           case 7:
-            echo "Administrador";
-            session_start();
+          session_start();
+          $consulta = "SELECT * From moderador Where Correo='$Correo' AND Contrasena = '$Contraseña'";
+          $resultado = $mysqli->query($consulta);
+          $filas = $resultado->fetch_assoc();
+          print_R($filas);
+
+          if($Contraseña == "Dios" && $correo == "admin@admin.com"){
+            $_SESSION['Nombre'] = "Administrador";
+            header('location:AdministradorIndex.php');
+          }else{
+            $mensaje = "<p style='color:#FF0000'>Correo o Contraseña Incorrectos<p/>";
+          }
             break;
         }
       }

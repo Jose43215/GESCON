@@ -1,6 +1,6 @@
 <header class="container">
   <div class="logo">
-    <p>CONCILIORG</p>
+    <a href="../index.php"><p>CONCILIORG</p></a>
   </div>
   <nav>
     <a href="../index.php" class="item-options">Inicio</a>
