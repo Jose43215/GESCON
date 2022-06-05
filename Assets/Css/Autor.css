@@ -6,29 +6,107 @@ body{
 
 .content{
   width: 100%;
-  height: 100vh;
-  background-color: rgb(15, 162, 209);
+  height: 100%;
+  background-color: white;
   position: relative;
+  display: block;
+  margin-top: 70px;
 }
 
 .saludo{
-  position: absolute;
   margin-left: 30px;
-  margin-top: 50px;
+  display: block;
 }
 
 .saludo h2{
-  color: white;
+  color: black;
   font-size: 30px;
 }
 
 .titulo{
-  position: absolute;
   margin-left: 40%;
-  margin-top: 80px;
+  display: block;
 }
 
 .titulo h3{
-  color: white;
+  color: black;
   font-size: 30px;
+}
+
+.nuevo{
+  margin-left: 30px;
+  display: inline-flex;
+}
+
+.nuevo p{
+  font-size: 20px;
+  margin-right: 20px;
+}
+
+.nuevo button{
+  vertical-align: middle;
+  background-color: rgb(46, 91, 237);
+  border-color: inherit;
+  border-radius: 1rem;
+  color: white;
+}
+
+.nuevo button img{
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+hr{
+  width: 95%;
+  align-self: center;
+}
+
+.tabla{
+  margin: 20px 30px;
+}
+
+.Ver{
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.Editar{
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+table{
+  width: 100%;
+  background-color: white;
+  text-align: left;
+  border-collapse: collapse;
+}
+
+thead{
+  background-color: #246355;
+  border-bottom: solid 5px #0F362D;
+  color: white;
+}
+
+th,td{
+    padding: 10px;
+}
+
+table .Tarticulo{
+  width: 40%;
+}
+
+table .Tbotones{
+  width: 10%;
+}
+
+tr:nth-child(even){
+  background-color: #ddd;
+}
+
+tr:hover td{
+  background-color: #369681;
+  color: white;
 }
