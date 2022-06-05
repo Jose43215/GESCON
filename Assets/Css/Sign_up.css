@@ -1,0 +1,138 @@
+body{
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../Recursos/Imagenes/room-1489768_1920.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.titulo{
+  font-size: 2.5rem;
+  margin-top: 6%;
+  color: white;
+}
+
+.signup-container{
+  align-self: center;
+  background: rgba(24,24,26,0.7);
+  width: 50%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  transform: translateX(50%) translateY(15.7%);
+}
+
+form{
+  width: 60%;
+  margin: auto;
+}
+
+.input-line-container{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+  margin: 1rem 0;
+}
+
+.name-input{
+  font-size: 14px;
+}
+
+.input-line{
+  width: 100%;
+  height: 30px;
+  background-color: transparent;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid #cbcbcb;
+  outline: none;
+  margin-bottom: 2rem;
+  color: white;
+}
+
+.input-select{
+  width: 100%;
+  height: 30px;
+  background-color: transparent;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid #cbcbcb;
+  outline: none;
+  margin-bottom: 2rem;
+  color: white;
+}
+
+.select-opcion{
+  color: black;
+}
+
+.button-signup{
+  width: 100%;
+  height: 45px;
+  border-radius: 55px;
+  background: rgba(255,255,255,0.14);
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: none;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.button-signup:hover{
+  box-shadow: 0px 0px 8px #ffffffa4;
+}
+
+.user{
+  display:none;
+}
+
+.user-option{
+  list-style: none;
+  margin-top: 3%;
+  transform: translateX(-2%);
+
+}
+
+.tablink{
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-family: monospace;
+  text-align: center;
+  padding: 1% 4.5%;
+  display: block;
+  overflow: hidden;
+  float: left;
+  transition: 0.5s ease-in-out;
+  background-color: #666666;
+}
+
+.tablink:hover{
+  background-color: #a6a6a6;
+}
+
+.user-selected{
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-family: monospace;
+  text-align: center;
+  padding: 1% 4.5%;
+  display: block;
+  overflow: hidden;
+  float: left;
+  background-color: #a6a6a6;
+}
