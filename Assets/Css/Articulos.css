@@ -2,70 +2,60 @@
 		position: absolute;
 		left: 0%;
 		top: 0%;
-		background-color: #524F4F;
+		background-color: #02152b;
 		overflow: hidden;
-		width: 83rem;
-		height: 5rem;
-		
-	}
-	.barra .navbar {
-		position: absolute;
-		top: 20%;
-		color: white;
-		overflow: hidden;
-		font-size: 30px;
-		font-family: Arial;
-	}
-	.barra .prin {
-		position: absolute;
-		top: 20%;
-		left: 30%;
-		color: white;
-		overflow: hidden;
-		font-size: 30px;
-		font-family: Arial;
-	}
-	.barra .texto {
-		position: absolute;
-		top: 10%;
-		left: 70%;
-		overflow: hidden;
+		width: 120rem;
+		height: 4rem;
+		text-align: center;
+
 	}
 	input[type=text] {
-		padding: 12px 20px;
+		text-align: center;
+		padding: 5px 40px;
 		margin: 8px 0;
 		box-sizing: border-box;
 	}
-	.barra .boton {
+
+	.opc {
+		overflow: hidden;
+		border-width: 5px;
+		border-style: solid;
+		border-color: #B2B0B0;
+		border-radius: 5px;
+		padding: 5px;
+		color: #ffffff;
+		background-color: #153f59;
+		font-size: 25px;
+		text-align: center;
+
+	}
+
+	.opcom{
+
+		overflow: hidden;
+		left: 50%;
+		border-radius: 5px;
+		padding: 4px,10px;
+		color: #ffffff;
+		background-color: #153f59;
+		font-size: 25px;
+		text-align: center;
+	}
+	.opc.boton {
 		position: absolute;
-		top: 20%;
-		left: 87%;
+		padding: 0px 25px;
+		top: 17%;
+		left: 79%;
 		overflow: hidden;
 		border-width: 3px;
 		border-style: solid;
-		border-color: #27CDCD;
-		border-radius: 10px;
-		color: #27CDCD;
+		border-color: #557996;
+		background-color: #02152b;
+		border-radius: 4px;
+		color: #557996;
 		overflow: hidden;
-		font-size: 30px;
+		font-size: 20px;
 		font-family: Arial;
-	}
-	.opc {
-		position: absolute;
-		top: 15%;
-		left: 30%;
-		overflow: hidden;
-		border-width: 1px;
-		border-style: solid;
-		border-color: #B2B0B0;
-		border-radius: 10px;
-		padding: 5px;
-		color: #B2B0B0;
-		background-color: #D7D2D2;
-		overflow: hidden;
-		font-size: 30px;
-		font-family: Arial;
-		font-weight: bold;
 	}
 	.art {
 		position: absolute;
@@ -103,17 +93,31 @@
 		font-weight: bold;
 	}
 
+
 	.opcns {
-		position: absolute;
-		top: 15%;
-		left: 42%;
+		font-size: 20px;
+		margin: 1rem;
+  	padding: 1rem;
+  	border: 5px solid #365b77;
+		text-align: center;
+		margin-top: 70px;
+	}
+
+	.evaluacion{
+		font-size: 20px;
+		margin: 1rem;
+  		padding: 1rem;
+  		border: 5px solid #365b77;
+		text-align: center;
 	}
 
 	.opcns select {
-		padding: 16px 20px;
+		font-size: 20px;
+		padding: 8px 100px;
 		border: none;
-		border-radius: 4px;
+		border-radius: 8px;
 		background-color: #f1f1f1;
+		text-align: center;
 	}
 
 	.opcns2 {

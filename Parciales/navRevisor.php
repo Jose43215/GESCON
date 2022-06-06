@@ -1,14 +1,13 @@
 <header class="container">
   <div class="logo">
-    <a href="index.php"><p>CONCILIORG</p></a>
+    <a href="JefeIndex.php"><p>CONCILIORG</p></a>
   </div>
   <nav>
-    <a href="index.php" class="item-options">Inicio</a>
-    <a href="Paginas/Sign_Up.php" class="item-options">Registrar</a>
-    <a href="Paginas/Login.php" class="item-options">Inicio Sesión</a>
-    <!--<a href="" class="item-options">Contacto</a>
+    <a href="Articulos.php" class="item-options">Inicio</a>
+    <!--<a href="" class="item-options">Inicio Sesión</a>
     <a href="" class="item-options">Contacto</a>
     <a href="" class="item-options">Contacto</a>-->
+    <a href="../Conexiones/CierreSesion/logout.php" class="item-options">Cerrar Sesion</a>
   </nav>
 </header>
 

@@ -6,9 +6,9 @@
     <a href="../index.php" class="item-options">Inicio</a>
     <a href="Sign_up.php" class="item-options">Registrar</a>
     <a href="Login.php" class="item-options">Inicio Sesión</a>
+    <!--<a href="" class="item-options">Contacto</a>
     <a href="" class="item-options">Contacto</a>
-    <a href="" class="item-options">Contacto</a>
-    <a href="" class="item-options">Contacto</a>
+    <a href="" class="item-options">Contacto</a>-->
   </nav>
 </header>
 

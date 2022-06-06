@@ -47,7 +47,7 @@
             $_SESSION['Contrasena'] = $filas['Contrasena'];
             $_SESSION['Id_Especialidad'] = $filas['Id_Especialidad'];
 
-            header('location: RevisorIndex.php');
+            header('location: Articulos.php');
           }else{
             $mensaje = "<p style='color:#FF0000'>Correo o Contraseña Incorrectos<p/>";
           }
