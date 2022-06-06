@@ -4,9 +4,9 @@
   </div>
   <nav>
     <a href="AutorIndex.php" class="item-options">Inicio</a>
-    <a href="" class="item-options">Inicio Sesión</a>
+    <!--<a href="" class="item-options">Inicio Sesión</a>
     <a href="" class="item-options">Contacto</a>
-    <a href="" class="item-options">Contacto</a>
+    <a href="" class="item-options">Contacto</a>-->
     <a href="../Conexiones/CierreSesion/logout.php" class="item-options">Cerrar Sesion</a>
   </nav>
 </header>

@@ -65,7 +65,7 @@
                     <td>$Ponencia</td>
                     <td>$evaluacion</td>
                     <td>
-                      <button class='Ver' type='button' name='button' onclick=\"window.location='VerArticulo.php?Id=$IArticulo'\"><img src='..\Assets\Recursos\Iconos\bx-show.svg'></button>
+                      <button class='Ver' type='button' name='button' onclick=\"window.location='VerArticuloAutor.php?Id=$IArticulo'\"><img src='..\Assets\Recursos\Iconos\bx-show.svg'></button>
                       <button class='Editar' type='button' name='button' onclick=\"window.location='EditarArticulo.php?Id=$IArticulo'\"><img src='..\Assets\Recursos\Iconos\bxs-edit-alt.svg'></button>
                     </td>
                   </tr>

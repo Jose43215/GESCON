@@ -1,0 +1,72 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: helvetica;
+}
+
+.content{
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  position: relative;
+  display: block;
+  margin-top: 70px;
+}
+
+.titulo{
+  margin-left: 40%;
+  display: block;
+}
+
+.titulo h3{
+  color: black;
+  font-size: 30px;
+}
+
+p{
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.visor{
+  text-align: center;
+  width: 50%;
+  float: left;
+}
+
+.visor object{
+  width: 95%;
+  height: 65vh;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.evaluacion{
+  text-align: center;
+  width: 50%;
+  float: left;
+  align-self: center;
+}
+
+hr{
+  width: 95%;
+  align-self: center;
+}
+
+table{
+  width: 95%;
+  background-color: white;
+  text-align: left;
+  border-collapse: collapse;
+}
+
+thead{
+  background-color: #246355;
+  border-bottom: solid 5px #0F362D;
+  color: white;
+}
+
+th,td{
+    padding: 10px;
+}
