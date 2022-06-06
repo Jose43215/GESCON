@@ -80,7 +80,7 @@
     <?php else: ?>
       <h1>Por Favor Inicie Sesión o Registrese</h1>
       <a href="Login.php">Iniciar Sesión</a> O
-      <a href="">Registrarse</a>
+      <a href="Sign_up.php">Registrarse</a>
     <?php endif; ?>
   </body>
 </html>

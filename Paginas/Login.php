@@ -68,7 +68,7 @@
             $_SESSION['Contrasena'] = $filas['Contrasena'];
             $_SESSION['Id_Especialidad'] = $filas['Id_Especialidad'];
 
-            header('location: JefeComiteIndex.php');
+            header('location: JefeIndex.php');
           }else{
             $mensaje = "<p style='color:#FF0000'>Correo o Contraseña Incorrectos<p/>";
           }
@@ -183,16 +183,6 @@
         <div class="input-line-container">
           <span class="name-input">Tipo Usuario</span>
           <select name="Usuario" class="input-select" required>
-            <?php
-              /*$consulta = "SELECT * From especialidades";
-              $resultado = $mysqli->query($consulta);
-
-              while($filas = $resultado->fetch_assoc()){
-                $id = $filas['Id_Especialidad'];
-                $nombre = $filas['Especialidad'];
-              echo "<option value='$id' class='select-opcion'>$nombre</option>";
-            }*/
-            ?>
             <option value="1" class="select-opcion">Autor</option>
             <option value="2" class="select-opcion">Revisor</option>
             <option value="3" class="select-opcion">Jefe de Comite</option>
