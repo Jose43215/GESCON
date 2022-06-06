@@ -26,15 +26,24 @@
     </div>
   </section>
 
-  <section class="parallax">
-    Seccion 2 <br>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-    culpa qui officia deserunt mollit anim id est laborum.
+  <section class="Cont-Parallax">
+    <h1>CONCILIORG</h1>
+    <br>
+    <div class="Imagen">
+      <img src="Assets\Recursos\Imagenes\Conciliorg.jpg" alt="">
+    </div>
+    <div class="textoimagen">
+      <p>
+        Un congreso es una reunión, normalmente periódica, en la que, durante uno o varios días,
+        personas de distintos lugares que comparten la misma profesión o actividad presentan
+        conferencias o exposiciones sobre temas relacionados con su trabajo o actividad para
+        intercambiarse informaciones y discutir sobre ellas.
+        <br><br>
+        De esta manera, CONCILIORG es un sistema enfocado en la gestión de congresos tomando en cuenta
+        a todos los involucrados en el mismo, se pretende ofrecer herramientas que faciliten tanto la
+        publicación como la correcta gestión de un congreso, ya sea personal, espacios,
+      </p>
+    </div>
   </section>
 
   <section class="parallax" id="seccion2">
