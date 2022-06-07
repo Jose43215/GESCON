@@ -88,7 +88,7 @@
             $_SESSION['Correo'] = $filas['Correo'];
             $_SESSION['Contrasena'] = $filas['Contrasena'];
 
-            header('location: AsistenteIndex.php');
+            header('location: Inscripcion.php');
           }else{
             $mensaje = "<p style='color:#FF0000'>Correo o Contraseña Incorrectos<p/>";
           }
@@ -109,7 +109,7 @@
             $_SESSION['Contrasena'] = $filas['Contrasena'];
             $_SESSION['Id_Especialidad'] = $filas['Id_Especialidad'];
 
-            header('location: AsistenteIndex.php');
+            header('location: Lista.php');
           }else{
             $mensaje = "<p style='color:#FF0000'>Correo o Contraseña Incorrectos<p/>";
           }
